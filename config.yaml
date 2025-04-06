@@ -10,17 +10,18 @@
 # incubator: The Carpentries Incubator
 # Note that you can also use a custom carpentry type. For more info,
 # see the documentation: https://carpentries.github.io/sandpaper-docs/editing.html
-carpentry: 'cp'
+carpentry: 'lab'
+doi: 'https://doi.org/10.21105/jose.00209'
 
 # Custom carpentry description
 # This will be used as the alt text for the logo
 # carpentry_description: "Custom Carpentry"
 
 # Overall title for pages.
-title: 'Introduction to the Command Line for Metagenomics'
+title: 'Project Organization and Management for Metagenomics'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: 
+created: 2015-03-24
 
 # Comma-separated list of keywords for the lesson
 keywords: 'software, data, lesson, The Carpentries'
@@ -65,13 +66,9 @@ contact:
 
 # Order of episodes in your lesson
 episodes: 
-- 01-introduction.md
-- 02-the-filesystem.md
-- 03-working-with-files.md
-- 04-redirection.md
-- 05-writing-scripts.md
-- 06-organization.md
-- 07-SRA_Toolkit.md
+- 01-tidiness.md
+- 02-project-planning.md
+- 03-ncbi-sra.md
 
 # Information for Learners
 learners: 
