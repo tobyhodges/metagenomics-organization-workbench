@@ -340,6 +340,40 @@
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What metadata should I collect?</li>
+<li>How should I structure my sequencing data and metadata?</li>
+<li>Which ethical considerations involve microbiome data and
+metadata?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Think about and understand the types of metadata a sequencing
+experiment will generate.</li>
+<li>Understand the importance of metadata and potential metadata
+standards.</li>
+<li>Explore common formatting challenges in spreadsheet data.</li>
+<li>Consider confidentiality issues that may arise from storing and
+sharing the metadata.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
 <p>When we think about the data for a sequencing project, we often start
 by thinking about the sequencing data that we get back from the
 sequencing center, but just as important, if not more so, is the data
@@ -347,13 +381,26 @@ you have generated about the sequences before they ever go to the
 sequencing center. Data about the data are often called the metadata.
 The sequence data itself is useless without the information about what
 you sequenced.</p>
-<blockquote>
-<h2 id="discussion-1">Discussion 1</h2>
+<div id="discussion-1" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="discussion-1" class="callout-inner">
+<h3 class="callout-title">Discussion 1</h3>
+<div class="callout-content">
 <p>With the person next to you, discuss:</p>
 <p>What kinds of data and information have you generated before you sent
 your DNA/RNA off for sequencing?</p>
-<blockquote>
-<h2 id="solution">Solution</h2>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
 <p>Types of files and information you have generated:<br>
 - Spreadsheet or tabular data with the data from your experiment and
 whatever you were measuring for your study. - Lab notebook notes about
@@ -365,9 +412,10 @@ prepared the DNA/RNA for sequencing and what type of sequencing you are
 doing, e.g., paired-end Illumina HiSeq. There likely will be other ideas
 here too. Was this more information and data than you were
 expecting?</p>
-<p>{: .solution} {: .challenge}</p>
-</blockquote>
-</blockquote>
+</div>
+</div>
+</div>
+</div>
 <p>All the data and information discussed can be considered metadata,
 i.e., data about the data. We want to follow a few guidelines for
 metadata.</p>
@@ -387,13 +435,19 @@ with each other later. Using dates also helps create unique identifiers
 because even if you process the same sample twice, you do not usually do
 it on the same day, or if you do, you are aware of it and give them
 names like A and B.</p>
-<blockquote>
-<h2 id="unique-identifiers">Unique identifiers</h2>
+<div id="unique-identifiers" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="unique-identifiers" class="callout-inner">
+<h3 class="callout-title">Unique identifiers</h3>
+<div class="callout-content">
 <p>Unique identifiers are unique names for a sample or set of sequencing
 data. They are names for that data that only exist for that data. Having
-these unique names makes them much easier to track later. {:
-.callout}</p>
-</blockquote>
+these unique names makes them much easier to track later.</p>
+</div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="metadata-data-about-the-experiment">Metadata: Data about the experiment<a class="anchor" aria-label="anchor" href="#metadata-data-about-the-experiment"></a>
 </h2>
 <hr class="half-width">
@@ -405,8 +459,13 @@ generated, and how to read the metadata spreadsheet. This information is
 very convenient when working on a team, and more people join the project
 even at different experiment steps. This order may help better your
 collaborators to easily understand what the data is about.</p>
-<blockquote>
-<h2 id="metadata-standards">Metadata standards</h2>
+<div id="metadata-standards" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="metadata-standards" class="callout-inner">
+<h3 class="callout-title">Metadata standards</h3>
+<div class="callout-content">
 <p>The kind of data you would collect depends on your experiment; often,
 there are guidelines from metadata standards. Many fields have
 particular ways that they structure their metadata, so it is consistent
@@ -423,48 +482,85 @@ to write README-style metadata in case there are no metadata standards
 for your type of data. When you submit data to an organization, they may
 give you a file with specifications about<br>
 the metadata needed for their platform. For example, MG-RAST gives a
-file like <a href="../files/01_MGRAST_DATA.xlsx">this</a>. {: .callout}</p>
-</blockquote>
-<blockquote>
-<h2 id="discussion-2.-what-information-would-you-write-in-your-readme-file">Discussion
-2. What information would you write in your README file?</h2>
+file like <a href="../files/01_MGRAST_DATA.xlsx">this</a>.</p>
+</div>
+</div>
+</div>
+<div id="discussion-2.-what-information-would-you-write-in-your-readme-file" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="discussion-2.-what-information-would-you-write-in-your-readme-file" class="callout-inner">
+<h3 class="callout-title">Discussion 2. What information would you write in your README file?</h3>
+<div class="callout-content">
 <p>Suppose that in your field, there are no metadata standards yet.
 Think about the minimum amount of information that someone would need to
 be able to work with your data without talking to you. What type of
 information would you put in your README file?</p>
-<blockquote>
-<h2 id="solution-1">Solution</h2>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
 <p>Some examples of clarifications that need to be written in the README
 are: * Date format (mm-dd-yyyy or dd-mm-yyyy, for example). * Meaning of
 abbreviations. * Meaning or pattern followed to construct the unique IDs
 of samples. * Details about the methodology. * Contact information about
 the persons who performed the collection and/or experiments. * Meaning
-of each variable name. {: .solution} {: .challenge}</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="discussion-3-ethical-considerations-in-microbiome-studies">Discussion
-3: Ethical considerations in microbiome studies</h2>
+of each variable name.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="discussion-3-ethical-considerations-in-microbiome-studies" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="discussion-3-ethical-considerations-in-microbiome-studies" class="callout-inner">
+<h3 class="callout-title">Discussion 3: Ethical considerations in microbiome studies</h3>
+<div class="callout-content">
 <p>The microbiomes knowledge is human’s global heritage and must be
 ruled by ethical principles such as do good, do not harm, respect, and
 act justly. While studying the human microbiome, there are particular
 concerns. For example, if you discover an infection such as HIV in the
 blood microbiome, would you inform the participants? What If they did
 not want to know? Following these principles, what other ethical
-considerations can you think about human microbiomes? &gt; ## Solution
-&gt; 1. Respect: Ask participants to sign explicit prior informed
+considerations can you think about human microbiomes?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div class="accordion-body">
+<ol style="list-style-type: decimal">
+<li>Respect: Ask participants to sign explicit prior informed
 consent.<br>
-&gt; 2. Do good: Share the data but protect participant’s privacy &gt;
-3. Do no harm: establish a policy about results communications. &gt; 4.
-Do no harm: Consider the Invasiveness of sampling and minimize the risk
-&gt; 5. Act justly: Favor diversity of subjects and justice<br>
-&gt; More information about these topics is developed by Mc Guire et
-al. 2008 in the paper:<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4024738/" class="external-link">Ethical,
+</li>
+<li>Do good: Share the data but protect participant’s privacy</li>
+<li>Do no harm: establish a policy about results communications.</li>
+<li>Do no harm: Consider the Invasiveness of sampling and minimize the
+risk</li>
+<li>Act justly: Favor diversity of subjects and justice<br>
+More information about these topics is developed by Mc Guire et al. 2008
+in the paper:<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4024738/" class="external-link">Ethical,
 legal, and social considerations in conducting the Human Microbiome
-Project</a> and by Lange et al. 2022 in: &gt; <a href="https://environmentalmicrobiome.biomedcentral.com/articles/10.1186/s40793-022-00444-y" class="external-link">Microbiome
+Project</a> and by Lange et al. 2022 in: <a href="https://environmentalmicrobiome.biomedcentral.com/articles/10.1186/s40793-022-00444-y" class="external-link">Microbiome
 ethics, guiding principles for microbiome research, use and knowledge
-management</a>’ {: .solution} {: .challenge}</p>
-</blockquote>
+management</a>’</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
 <div class="section level3">
 <h3 id="structuring-data-in-spreadsheets">Structuring data in spreadsheets<a class="anchor" aria-label="anchor" href="#structuring-data-in-spreadsheets"></a>
 </h3>
@@ -501,16 +597,28 @@ distinct columns.</li>
 data required by most data repositories.</li>
 </ul>
 <p><a href="https://github.com/datacarpentry/organization-genomics/raw/gh-pages/files/Ecoli_metadata_composite_messy.xlsx" class="external-link"><img src="../fig/01_tidiness_datasheet_example_messy.png" alt="Messy spreadsheet" class="figure"></a></p>
-<blockquote>
-<h2 id="discussion-4.-spreadsheet-organization.">Discussion 4.
-Spreadsheet organization.</h2>
+<div id="discussion-4.-spreadsheet-organization." class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="discussion-4.-spreadsheet-organization." class="callout-inner">
+<h3 class="callout-title">Discussion 4. Spreadsheet organization.</h3>
+<div class="callout-content">
 <p>This is a potential spreadsheet data generated about a sequencing
 experiment. With the person next to you, for about 2 minutes, discuss
 some problems with the spreadsheet data shown above. You can look at the
 image or download the file to your computer via this <a href="https://github.com/datacarpentry/organization-genomics/raw/gh-pages/files/Ecoli_metadata_composite_messy.xlsx" class="external-link">link</a>
 and open it in a spreadsheet reader like Excel.</p>
-<blockquote>
-<h2 id="solution-2">Solution</h2>
+</div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div class="accordion-body">
 <p>There are a few potential errors to be on the lookout for in your own
 data and data from collaborators or the Internet. Suppose you are aware
 of the errors and the possible negative effect on downstream data
@@ -542,9 +650,10 @@ spreadsheet:</p>
 <p><a href="https://raw.githubusercontent.com/datacarpentry/wrangling-genomics/gh-pages/files/Ecoli_metadata_composite.tsv" class="external-link">Cleaned
 spreadsheet</a> Download the file using right-click (PC)/command-click
 (Mac).</p>
-<p>{: .solution} {: .challenge}</p>
-</blockquote>
-</blockquote>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section><section><h2 class="section-heading" id="further-notes-on-data-tidiness">Further notes on data tidiness<a class="anchor" aria-label="anchor" href="#further-notes-on-data-tidiness"></a>
 </h2>
@@ -565,6 +674,25 @@ the names of directories and files.</p>
 Carpentry Ecology spreadsheet lesson</a></p>
 <p>Tools like <a href="http://www.datacarpentry.org/OpenRefine-ecology-lesson/" class="external-link">OpenRefine</a>
 can help you clean your data.</p>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points</h3>
+<div class="callout-content">
+<ul>
+<li>Assigning and keeping track of appropriate unique ID identifiers
+must be a well-thought process.</li>
+<li>Metadata is key for you and others to work with your data.</li>
+<li>Tabular data needs to be structured to work with it
+effectively.</li>
+<li>Human microbiome data requires informed consent and
+confidentiality.</li>
+</ul>
+</div>
+</div>
+</div>
 </section></section><section id="aio-02-project-planning"><p>Content from <a href="02-project-planning.html">Planning for NGS Projects</a></p>
 <hr>
 <p>Last updated on 2025-04-16 |
@@ -574,6 +702,36 @@ can help you clean your data.</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How do I plan and organize a genome sequencing project?</li>
+<li>What information does a sequencing facility need?</li>
+<li>What are the guidelines for data storage?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Understand the data we send to and get back from a sequencing
+center.</li>
+<li>Make decisions about how (if) data will be stored, archived, shared,
+etc.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
 <section><h2 class="section-heading" id="large-datasets">Large datasets<a class="anchor" aria-label="anchor" href="#large-datasets"></a>
 </h2>
 <hr class="half-width">
@@ -585,8 +743,13 @@ first time. In the most important ways, the methods and approaches we
 need in bioinformatics are the same ones we need at the bench or in the
 field - <em>planning, documenting, and organizing</em> are the key to
 good reproducible science.</p>
-<blockquote>
-<h2 id="discussion-1">Discussion 1</h2>
+<div id="discussion-1" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="discussion-1" class="callout-inner">
+<h3 class="callout-title">Discussion 1</h3>
+<div class="callout-content">
 <p>Before we go any further, here are some important questions. If you
 are learning at a workshop, please discuss these questions with your
 neighbor.</p>
@@ -598,8 +761,16 @@ computer(s)? What is your strategy for saving and sharing your sequence
 files?<br>
 How can you be sure that your raw data has not been unintentionally
 corrupted?</p>
-<blockquote>
-<h2 id="solution">Solution</h2>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
 <p>With large datasets is hard to have enough storage space for your
 data and your results, and is hard to anticipate how much disc space and
 processing time you need for every step of your pipelines, including
@@ -608,9 +779,10 @@ It is hard to identify errors when you have too many files and too many
 observations in a spreadsheet.<br>
 Some programs may not work or perform poorly with many files. Data can
 be protected by removing file permissions and having copies.</p>
-<p>{: .solution} {: .challenge}</p>
-</blockquote>
-</blockquote>
+</div>
+</div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="sending-samples-to-the-facility">Sending samples to the facility<a class="anchor" aria-label="anchor" href="#sending-samples-to-the-facility"></a>
 </h2>
 <hr class="half-width">
@@ -621,9 +793,13 @@ at the following example submission spreadsheet.</p>
 <p>Download the file using right-click (PC)/command-click (Mac). This
 file is a tab-delimited text file. Try opening it with Excel or another
 spreadsheet program.</p>
-<blockquote>
-<h2 id="exercise-1-identifying-errors">Exercise 1: Identifying
-errors</h2>
+<div id="exercise-1-identifying-errors" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise-1-identifying-errors" class="callout-inner">
+<h3 class="callout-title">Exercise 1: Identifying errors</h3>
+<div class="callout-content">
 <ol style="list-style-type: decimal">
 <li>What are some errors you can spot in the data? Typos, missing data,
 inconsistencies?</li>
@@ -631,8 +807,16 @@ inconsistencies?</li>
 <li>What are some errors in the spreadsheet that would be difficult to
 spot? Is there any way you can test this?</li>
 </ol>
-<blockquote>
-<h2 id="solution-1">Solution</h2>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
 <p>Errors: - Sequential order of well_position changes - Format of
 client_sample_id changes and cannot have spaces, slashes, non-standard
 ASCII characters - Capitalization of the replicate column changes -
@@ -648,9 +832,10 @@ etc.</p>
 <p>Errors hard to spot: - No space between “wild” and “type”, repeated
 barcode numbers, missing data, duplicate names - Find by sorting, or
 counting</p>
-<p>{: .solution} {: .challenge}</p>
-</blockquote>
-</blockquote>
+</div>
+</div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="retrieving-sample-sequencing-data-from-the-facility">Retrieving sample sequencing data from the facility<a class="anchor" aria-label="anchor" href="#retrieving-sample-sequencing-data-from-the-facility"></a>
 </h2>
 <hr class="half-width">
@@ -664,9 +849,13 @@ text</a></li>
 <li><a href="../files/sequencing_results_metadata.xls">Sequencing results -
 Excel</a></li>
 </ul>
-<blockquote>
-<h2 id="exercise-2-exploring-sequencing-metadata">Exercise 2: Exploring
-sequencing metadata</h2>
+<div id="exercise-2-exploring-sequencing-metadata" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise-2-exploring-sequencing-metadata" class="callout-inner">
+<h3 class="callout-title">Exercise 2: Exploring sequencing metadata</h3>
+<div class="callout-content">
 <ol style="list-style-type: decimal">
 <li>How are these samples organized?</li>
 <li>If you wanted to relate file names to the sample names submitted
@@ -676,8 +865,16 @@ above (e.g., wild type), could you do so?</li>
 <li>What is the total file size - what challenges in downloading and
 sharing these data might exist?</li>
 </ol>
-<blockquote>
-<h2 id="solution-2">Solution</h2>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Samples are organized by sample_id</li>
 <li>To relate filenames, use the sample_id and do a VLOOKUP on the
@@ -692,9 +889,10 @@ following the transfer. Absolute file integrity checks following
 transfers and methods for faster file transfers are possible but beyond
 the scope of this lesson.</li>
 </ol>
-<p>{: .solution} {: .challenge}</p>
-</blockquote>
-</blockquote>
+</div>
+</div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="storing-data">Storing data<a class="anchor" aria-label="anchor" href="#storing-data"></a>
 </h2>
 <hr class="half-width">
@@ -757,15 +955,37 @@ instinct alone - taking your time, using Google or another Internet
 search engine, and asking for help are all valid ways of solving your
 problems. As you complete the lessons, you’ll be able to use all those
 methods more efficiently.</p>
-<blockquote>
-<h2 id="where-to-go-from-here">Where to go from here?</h2>
+<div id="where-to-go-from-here" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="where-to-go-from-here" class="callout-inner">
+<h3 class="callout-title">Where to go from here?</h3>
+<div class="callout-content">
 <p>More reading about core competencies</p>
 <p>L. Welch, F. Lewitter, R. Schwartz, C. Brooksbank, P. Radivojac, B.
 Gaeta and M. Schneider, ‘<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3945096/" class="external-link">Bioinformatics
 Curriculum Guidelines: Toward a Definition of Core Competencies</a>’,
 PLoS Comput Biol, vol. 10, no. 3, p. e1003496, 2014.</p>
-<p>{: .callout}</p>
-</blockquote>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points</h3>
+<div class="callout-content">
+<ul>
+<li>Data being sent to a sequencing center also needs to be structured
+so you can use it.</li>
+<li>Raw sequencing data should be kept raw somewhere, so you can always
+go back to the original files.</li>
+</ul>
+</div>
+</div>
+</div>
 </section></section><section id="aio-03-ncbi-sra"><p>Content from <a href="03-ncbi-sra.html">Examining Data on the NCBI SRA Database</a></p>
 <hr>
 <p>Last updated on 2025-04-16 |
@@ -775,6 +995,32 @@ PLoS Comput Biol, vol. 10, no. 3, p. e1003496, 2014.</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How do I access public sequencing data?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Be aware that public genomic data is available.</li>
+<li>Understand how to access and download this data.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
 <section><h2 class="section-heading" id="public-data">Public data<a class="anchor" aria-label="anchor" href="#public-data"></a>
 </h2>
 <hr class="half-width">
@@ -872,18 +1118,22 @@ there were 40 runs, 9.86 GBytes of data, and 19.61 Gbases.
 favorite spreadsheet program, open the <code>SraRunTable.txt</code>
 file. If prompted by the spreadsheet software, be aware that the SRA Run
 Selector provides a <strong>comma-separated</strong> file.</p></li>
-</ol>
-<blockquote>
-<h2 id="delimiters">Delimiters</h2>
+</ol></section><section><h2 class="section-heading" id="delimiters">Delimiters<a class="anchor" aria-label="anchor" href="#delimiters"></a>
+</h2>
+<hr class="half-width">
 <p>The fields in a table are separated (or delimited) usually by commas
 or tabs, so they are named with the <code>.csv</code> (comma-separated
 values) and <code>.tsv</code>(tab-separated values) extensions,
 respectively. But since they are both plain text files, you can find
 them with the <code>.txt</code> extension, just like in our
 <code>SraRunTable.txt</code>. {: .callout}</p>
-</blockquote>
-<blockquote>
-<h2 id="discussion-1">Discussion 1</h2>
+<div id="discussion-1" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="discussion-1" class="callout-inner">
+<h3 class="callout-title">Discussion 1</h3>
+<div class="callout-content">
 <p>Discuss with the person next to you:</p>
 <ol style="list-style-type: decimal">
 <li>What was the sequencing platform used for this experiment?</li>
@@ -891,8 +1141,16 @@ them with the <code>.txt</code> extension, just like in our
 end</a> sequencing data?</li>
 <li>What other kind of metadata is available?</li>
 </ol>
-<blockquote>
-<h2 id="solution">Solution</h2>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>The Illumina sequencing platform was used, shown in the column
 “Platform”. The column “Instrument” shows which type of Illumina
@@ -907,24 +1165,35 @@ technical information, like “Assay Type” and “DATASTORE filetype”,
 information about the sequences like “Bases” and biological metadata
 like “environment_(biome)” and “potassium_ppm”.</li>
 </ol>
-<p>{: .solution} {: .challenge}</p>
-</blockquote>
-</blockquote>
+</div>
+</div>
+</div>
+</div>
 <p>After answering the questions, you should avoid saving any changes
 you might have made to this file. We don’t want to make any changes. If
 you were to save this file, make sure you save it as a plain
 <code>.txt</code> file. Remember to keep raw things raw.</p>
-<blockquote>
-<h2 id="discussion-2-exploring-the-european-nucleotide-archive">Discussion
-2: Exploring the European Nucleotide Archive</h2>
+<div id="discussion-2-exploring-the-european-nucleotide-archive" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="discussion-2-exploring-the-european-nucleotide-archive" class="callout-inner">
+<h3 class="callout-title">Discussion 2: Exploring the European Nucleotide Archive</h3>
+<div class="callout-content">
 <p>Navigate to the <a href="https://www.ebi.ac.uk/ena" class="external-link">ENA</a> and
 search the BioProject “PRJEB22811”. Explore the ENA Browser and discuss
 it with your neighbor the differences between the ENA Browser and the
 SRA Run Selector.</p>
-<p>{: .challenge}</p>
-</blockquote>
-<blockquote>
-<h2 id="downloading-reads">Downloading reads</h2>
+</div>
+</div>
+</div>
+<div id="downloading-reads" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="downloading-reads" class="callout-inner">
+<h3 class="callout-title">Downloading reads</h3>
+<div class="callout-content">
 <p>For downloading the reads, there are mainly two options: * One by
 one: Go to the <strong>Run Browser</strong> of each sample, navigate to
 the tab <strong>FASTA/FASTQ download</strong> and click on the
@@ -935,8 +1204,10 @@ List</strong> button. This will download a text file
 <code>SRR_Acc_List.txt</code> that you can use to download the reads in
 bulk with the <a href="http://www.ncbi.nlm.nih.gov/Traces/sra/?view=toolkit_doc" class="external-link">SRA
 Toolkit</a>, a command-line software package, which is outside the scope
-of this lesson. {: .callout}</p>
-</blockquote>
+of this lesson.</p>
+</div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="where-to-learn-more">Where to learn more<a class="anchor" aria-label="anchor" href="#where-to-learn-more"></a>
 </h2>
 <hr class="half-width">
@@ -960,6 +1231,20 @@ information processing underpin trophic strategy in a whole-ecosystem
 nutrient enrichment experiment. eLife; 2020. DOI: 10.7554/eLife.49816 <a href="https://elifesciences.org/articles/49816#info" class="external-link">Paper</a>.<br>
 Data on NCBI SRA: <a href="https://www.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA556841&amp;o=acc_s%3Aa" class="external-link">https://www.ncbi.nlm.nih.gov/Traces/study/?acc=PRJEB22811&amp;o=acc_s%3Aa</a><br>
 Data on EMBL-EBI ENA: <a href="https://www.ebi.ac.uk/ena/data/view/PRJNA556841" class="external-link">https://www.ebi.ac.uk/ena/browser/view/PRJEB22811</a></p>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points</h3>
+<div class="callout-content">
+<ul>
+<li>Public data repositories are a great source of genomic data.</li>
+<li>You are likely to put your data on a public repository.</li>
+</ul>
+</div>
+</div>
+</div>
 </section></section>
 </div>
     </main>

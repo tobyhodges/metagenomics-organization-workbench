@@ -312,6 +312,36 @@
 
         
 
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul><li>What metadata should I collect?</li>
+<li>How should I structure my sequencing data and metadata?</li>
+<li>Which ethical considerations involve microbiome data and
+metadata?</li>
+</ul></div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul><li>Think about and understand the types of metadata a sequencing
+experiment will generate.</li>
+<li>Understand the importance of metadata and potential metadata
+standards.</li>
+<li>Explore common formatting challenges in spreadsheet data.</li>
+<li>Consider confidentiality issues that may arise from storing and
+sharing the metadata.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
 <p>When we think about the data for a sequencing project, we often start
 by thinking about the sequencing data that we get back from the
 sequencing center, but just as important, if not more so, is the data
@@ -319,13 +349,26 @@ you have generated about the sequences before they ever go to the
 sequencing center. Data about the data are often called the metadata.
 The sequence data itself is useless without the information about what
 you sequenced.</p>
-<blockquote>
-<h2 id="discussion-1">Discussion 1</h2>
+<div id="discussion-1" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="discussion-1" class="callout-inner">
+<h3 class="callout-title">Discussion 1</h3>
+<div class="callout-content">
 <p>With the person next to you, discuss:</p>
 <p>What kinds of data and information have you generated before you sent
 your DNA/RNA off for sequencing?</p>
-<blockquote>
-<h2 id="solution">Solution</h2>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
 <p>Types of files and information you have generated:<br>
 - Spreadsheet or tabular data with the data from your experiment and
 whatever you were measuring for your study. - Lab notebook notes about
@@ -337,9 +380,10 @@ prepared the DNA/RNA for sequencing and what type of sequencing you are
 doing, e.g., paired-end Illumina HiSeq. There likely will be other ideas
 here too. Was this more information and data than you were
 expecting?</p>
-<p>{: .solution} {: .challenge}</p>
-</blockquote>
-</blockquote>
+</div>
+</div>
+</div>
+</div>
 <p>All the data and information discussed can be considered metadata,
 i.e., data about the data. We want to follow a few guidelines for
 metadata.</p>
@@ -357,13 +401,19 @@ with each other later. Using dates also helps create unique identifiers
 because even if you process the same sample twice, you do not usually do
 it on the same day, or if you do, you are aware of it and give them
 names like A and B.</p>
-<blockquote>
-<h2 id="unique-identifiers">Unique identifiers</h2>
+<div id="unique-identifiers" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="unique-identifiers" class="callout-inner">
+<h3 class="callout-title">Unique identifiers</h3>
+<div class="callout-content">
 <p>Unique identifiers are unique names for a sample or set of sequencing
 data. They are names for that data that only exist for that data. Having
-these unique names makes them much easier to track later. {:
-.callout}</p>
-</blockquote>
+these unique names makes them much easier to track later.</p>
+</div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="metadata-data-about-the-experiment">Metadata: Data about the experiment<a class="anchor" aria-label="anchor" href="#metadata-data-about-the-experiment"></a></h2>
 <hr class="half-width"><p>Data about the experiment is usually collected in
 <strong>spreadsheets</strong>, like Excel. Alongside the spreadsheet,
@@ -373,8 +423,13 @@ generated, and how to read the metadata spreadsheet. This information is
 very convenient when working on a team, and more people join the project
 even at different experiment steps. This order may help better your
 collaborators to easily understand what the data is about.</p>
-<blockquote>
-<h2 id="metadata-standards">Metadata standards</h2>
+<div id="metadata-standards" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="metadata-standards" class="callout-inner">
+<h3 class="callout-title">Metadata standards</h3>
+<div class="callout-content">
 <p>The kind of data you would collect depends on your experiment; often,
 there are guidelines from metadata standards. Many fields have
 particular ways that they structure their metadata, so it is consistent
@@ -391,48 +446,82 @@ to write README-style metadata in case there are no metadata standards
 for your type of data. When you submit data to an organization, they may
 give you a file with specifications about<br>
 the metadata needed for their platform. For example, MG-RAST gives a
-file like <a href="../files/01_MGRAST_DATA.xlsx">this</a>. {: .callout}</p>
-</blockquote>
-<blockquote>
-<h2 id="discussion-2.-what-information-would-you-write-in-your-readme-file">Discussion
-2. What information would you write in your README file?</h2>
+file like <a href="../files/01_MGRAST_DATA.xlsx">this</a>.</p>
+</div>
+</div>
+</div>
+<div id="discussion-2.-what-information-would-you-write-in-your-readme-file" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="discussion-2.-what-information-would-you-write-in-your-readme-file" class="callout-inner">
+<h3 class="callout-title">Discussion 2. What information would you write in your README file?</h3>
+<div class="callout-content">
 <p>Suppose that in your field, there are no metadata standards yet.
 Think about the minimum amount of information that someone would need to
 be able to work with your data without talking to you. What type of
 information would you put in your README file?</p>
-<blockquote>
-<h2 id="solution-1">Solution</h2>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
 <p>Some examples of clarifications that need to be written in the README
 are: * Date format (mm-dd-yyyy or dd-mm-yyyy, for example). * Meaning of
 abbreviations. * Meaning or pattern followed to construct the unique IDs
 of samples. * Details about the methodology. * Contact information about
 the persons who performed the collection and/or experiments. * Meaning
-of each variable name. {: .solution} {: .challenge}</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="discussion-3-ethical-considerations-in-microbiome-studies">Discussion
-3: Ethical considerations in microbiome studies</h2>
+of each variable name.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="discussion-3-ethical-considerations-in-microbiome-studies" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="discussion-3-ethical-considerations-in-microbiome-studies" class="callout-inner">
+<h3 class="callout-title">Discussion 3: Ethical considerations in microbiome studies</h3>
+<div class="callout-content">
 <p>The microbiomes knowledge is human’s global heritage and must be
 ruled by ethical principles such as do good, do not harm, respect, and
 act justly. While studying the human microbiome, there are particular
 concerns. For example, if you discover an infection such as HIV in the
 blood microbiome, would you inform the participants? What If they did
 not want to know? Following these principles, what other ethical
-considerations can you think about human microbiomes? &gt; ## Solution
-&gt; 1. Respect: Ask participants to sign explicit prior informed
-consent.<br>
-&gt; 2. Do good: Share the data but protect participant’s privacy &gt;
-3. Do no harm: establish a policy about results communications. &gt; 4.
-Do no harm: Consider the Invasiveness of sampling and minimize the risk
-&gt; 5. Act justly: Favor diversity of subjects and justice<br>
-&gt; More information about these topics is developed by Mc Guire et
-al. 2008 in the paper:<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4024738/" class="external-link">Ethical,
+considerations can you think about human microbiomes?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div class="accordion-body">
+<ol style="list-style-type: decimal"><li>Respect: Ask participants to sign explicit prior informed
+consent.<br></li>
+<li>Do good: Share the data but protect participant’s privacy</li>
+<li>Do no harm: establish a policy about results communications.</li>
+<li>Do no harm: Consider the Invasiveness of sampling and minimize the
+risk</li>
+<li>Act justly: Favor diversity of subjects and justice<br>
+More information about these topics is developed by Mc Guire et al. 2008
+in the paper:<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4024738/" class="external-link">Ethical,
 legal, and social considerations in conducting the Human Microbiome
-Project</a> and by Lange et al. 2022 in: &gt; <a href="https://environmentalmicrobiome.biomedcentral.com/articles/10.1186/s40793-022-00444-y" class="external-link">Microbiome
+Project</a> and by Lange et al. 2022 in: <a href="https://environmentalmicrobiome.biomedcentral.com/articles/10.1186/s40793-022-00444-y" class="external-link">Microbiome
 ethics, guiding principles for microbiome research, use and knowledge
-management</a>’ {: .solution} {: .challenge}</p>
-</blockquote>
+management</a>’</li>
+</ol></div>
+</div>
+</div>
+</div>
 <div class="section level3">
 <h3 id="structuring-data-in-spreadsheets">Structuring data in spreadsheets<a class="anchor" aria-label="anchor" href="#structuring-data-in-spreadsheets"></a></h3>
 <p>Independent of the type of data you are collecting, there are
@@ -466,16 +555,28 @@ distinct columns.</li>
 (comma-separated values). This format ensures that anyone can use the
 data required by most data repositories.</li>
 </ul><p><a href="https://github.com/datacarpentry/organization-genomics/raw/gh-pages/files/Ecoli_metadata_composite_messy.xlsx" class="external-link"><img src="../fig/01_tidiness_datasheet_example_messy.png" alt="Messy spreadsheet" class="figure"></a></p>
-<blockquote>
-<h2 id="discussion-4.-spreadsheet-organization.">Discussion 4.
-Spreadsheet organization.</h2>
+<div id="discussion-4.-spreadsheet-organization." class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="discussion-4.-spreadsheet-organization." class="callout-inner">
+<h3 class="callout-title">Discussion 4. Spreadsheet organization.</h3>
+<div class="callout-content">
 <p>This is a potential spreadsheet data generated about a sequencing
 experiment. With the person next to you, for about 2 minutes, discuss
 some problems with the spreadsheet data shown above. You can look at the
 image or download the file to your computer via this <a href="https://github.com/datacarpentry/organization-genomics/raw/gh-pages/files/Ecoli_metadata_composite_messy.xlsx" class="external-link">link</a>
 and open it in a spreadsheet reader like Excel.</p>
-<blockquote>
-<h2 id="solution-2">Solution</h2>
+</div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div class="accordion-body">
 <p>There are a few potential errors to be on the lookout for in your own
 data and data from collaborators or the Internet. Suppose you are aware
 of the errors and the possible negative effect on downstream data
@@ -505,9 +606,10 @@ spreadsheet:</p>
 <p><a href="https://raw.githubusercontent.com/datacarpentry/wrangling-genomics/gh-pages/files/Ecoli_metadata_composite.tsv" class="external-link">Cleaned
 spreadsheet</a> Download the file using right-click (PC)/command-click
 (Mac).</p>
-<p>{: .solution} {: .challenge}</p>
-</blockquote>
-</blockquote>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section><section><h2 class="section-heading" id="further-notes-on-data-tidiness">Further notes on data tidiness<a class="anchor" aria-label="anchor" href="#further-notes-on-data-tidiness"></a></h2>
 <hr class="half-width"><p>Data organization at this point of your experiment will help
@@ -526,6 +628,23 @@ the names of directories and files.</p>
 Carpentry Ecology spreadsheet lesson</a></p>
 <p>Tools like <a href="http://www.datacarpentry.org/OpenRefine-ecology-lesson/" class="external-link">OpenRefine</a>
 can help you clean your data.</p>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points</h3>
+<div class="callout-content">
+<ul><li>Assigning and keeping track of appropriate unique ID identifiers
+must be a well-thought process.</li>
+<li>Metadata is key for you and others to work with your data.</li>
+<li>Tabular data needs to be structured to work with it
+effectively.</li>
+<li>Human microbiome data requires informed consent and
+confidentiality.</li>
+</ul></div>
+</div>
+</div>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/index.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>

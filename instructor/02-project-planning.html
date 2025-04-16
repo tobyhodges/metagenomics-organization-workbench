@@ -314,6 +314,32 @@
 
         
 
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul><li>How do I plan and organize a genome sequencing project?</li>
+<li>What information does a sequencing facility need?</li>
+<li>What are the guidelines for data storage?</li>
+</ul></div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul><li>Understand the data we send to and get back from a sequencing
+center.</li>
+<li>Make decisions about how (if) data will be stored, archived, shared,
+etc.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
 <section><h2 class="section-heading" id="large-datasets">Large datasets<a class="anchor" aria-label="anchor" href="#large-datasets"></a></h2>
 <hr class="half-width"><p>There are a variety of ways to work with a large sequencing dataset.
 You may be a novice who has not used bioinformatics tools beyond doing
@@ -323,8 +349,13 @@ first time. In the most important ways, the methods and approaches we
 need in bioinformatics are the same ones we need at the bench or in the
 field - <em>planning, documenting, and organizing</em> are the key to
 good reproducible science.</p>
-<blockquote>
-<h2 id="discussion-1">Discussion 1</h2>
+<div id="discussion-1" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="discussion-1" class="callout-inner">
+<h3 class="callout-title">Discussion 1</h3>
+<div class="callout-content">
 <p>Before we go any further, here are some important questions. If you
 are learning at a workshop, please discuss these questions with your
 neighbor.</p>
@@ -336,8 +367,16 @@ computer(s)? What is your strategy for saving and sharing your sequence
 files?<br>
 How can you be sure that your raw data has not been unintentionally
 corrupted?</p>
-<blockquote>
-<h2 id="solution">Solution</h2>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
 <p>With large datasets is hard to have enough storage space for your
 data and your results, and is hard to anticipate how much disc space and
 processing time you need for every step of your pipelines, including
@@ -346,9 +385,10 @@ It is hard to identify errors when you have too many files and too many
 observations in a spreadsheet.<br>
 Some programs may not work or perform poorly with many files. Data can
 be protected by removing file permissions and having copies.</p>
-<p>{: .solution} {: .challenge}</p>
-</blockquote>
-</blockquote>
+</div>
+</div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="sending-samples-to-the-facility">Sending samples to the facility<a class="anchor" aria-label="anchor" href="#sending-samples-to-the-facility"></a></h2>
 <hr class="half-width"><p>The first step in sending your sample for sequencing will be to
 complete a form documenting the metadata for the facility. Take a look
@@ -357,16 +397,28 @@ at the following example submission spreadsheet.</p>
 <p>Download the file using right-click (PC)/command-click (Mac). This
 file is a tab-delimited text file. Try opening it with Excel or another
 spreadsheet program.</p>
-<blockquote>
-<h2 id="exercise-1-identifying-errors">Exercise 1: Identifying
-errors</h2>
+<div id="exercise-1-identifying-errors" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise-1-identifying-errors" class="callout-inner">
+<h3 class="callout-title">Exercise 1: Identifying errors</h3>
+<div class="callout-content">
 <ol style="list-style-type: decimal"><li>What are some errors you can spot in the data? Typos, missing data,
 inconsistencies?</li>
 <li>What improvements could be made to the choices in naming?</li>
 <li>What are some errors in the spreadsheet that would be difficult to
 spot? Is there any way you can test this?</li>
-</ol><blockquote>
-<h2 id="solution-1">Solution</h2>
+</ol></div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
 <p>Errors: - Sequential order of well_position changes - Format of
 client_sample_id changes and cannot have spaces, slashes, non-standard
 ASCII characters - Capitalization of the replicate column changes -
@@ -382,9 +434,10 @@ etc.</p>
 <p>Errors hard to spot: - No space between “wild” and “type”, repeated
 barcode numbers, missing data, duplicate names - Find by sorting, or
 counting</p>
-<p>{: .solution} {: .challenge}</p>
-</blockquote>
-</blockquote>
+</div>
+</div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="retrieving-sample-sequencing-data-from-the-facility">Retrieving sample sequencing data from the facility<a class="anchor" aria-label="anchor" href="#retrieving-sample-sequencing-data-from-the-facility"></a></h2>
 <hr class="half-width"><p>When the data come back from the sequencing facility, you will
 receive some documentation (metadata) as well as the sequence files
@@ -394,9 +447,13 @@ provided as a text file and Excel file:</p>
 text</a></li>
 <li><a href="../files/sequencing_results_metadata.xls">Sequencing results -
 Excel</a></li>
-</ul><blockquote>
-<h2 id="exercise-2-exploring-sequencing-metadata">Exercise 2: Exploring
-sequencing metadata</h2>
+</ul><div id="exercise-2-exploring-sequencing-metadata" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise-2-exploring-sequencing-metadata" class="callout-inner">
+<h3 class="callout-title">Exercise 2: Exploring sequencing metadata</h3>
+<div class="callout-content">
 <ol style="list-style-type: decimal"><li>How are these samples organized?</li>
 <li>If you wanted to relate file names to the sample names submitted
 above (e.g., wild type), could you do so?</li>
@@ -404,8 +461,16 @@ above (e.g., wild type), could you do so?</li>
 <li>What does the ‘.gz’ extension on the filenames indicate?</li>
 <li>What is the total file size - what challenges in downloading and
 sharing these data might exist?</li>
-</ol><blockquote>
-<h2 id="solution-2">Solution</h2>
+</ol></div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Samples are organized by sample_id</li>
 <li>To relate filenames, use the sample_id and do a VLOOKUP on the
 submission sheet</li>
@@ -418,9 +483,10 @@ To transfer files this large, you should validate the file size
 following the transfer. Absolute file integrity checks following
 transfers and methods for faster file transfers are possible but beyond
 the scope of this lesson.</li>
-</ol><p>{: .solution} {: .challenge}</p>
-</blockquote>
-</blockquote>
+</ol></div>
+</div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="storing-data">Storing data<a class="anchor" aria-label="anchor" href="#storing-data"></a></h2>
 <hr class="half-width"><p>The raw data you get back from the sequencing center is the
 foundation of your sequencing analysis. You need to keep this data so
@@ -475,15 +541,35 @@ instinct alone - taking your time, using Google or another Internet
 search engine, and asking for help are all valid ways of solving your
 problems. As you complete the lessons, you’ll be able to use all those
 methods more efficiently.</p>
-<blockquote>
-<h2 id="where-to-go-from-here">Where to go from here?</h2>
+<div id="where-to-go-from-here" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="where-to-go-from-here" class="callout-inner">
+<h3 class="callout-title">Where to go from here?</h3>
+<div class="callout-content">
 <p>More reading about core competencies</p>
 <p>L. Welch, F. Lewitter, R. Schwartz, C. Brooksbank, P. Radivojac, B.
 Gaeta and M. Schneider, ‘<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3945096/" class="external-link">Bioinformatics
 Curriculum Guidelines: Toward a Definition of Core Competencies</a>’,
 PLoS Comput Biol, vol. 10, no. 3, p. e1003496, 2014.</p>
-<p>{: .callout}</p>
-</blockquote>
+</div>
+</div>
+</div>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points</h3>
+<div class="callout-content">
+<ul><li>Data being sent to a sequencing center also needs to be structured
+so you can use it.</li>
+<li>Raw sequencing data should be kept raw somewhere, so you can always
+go back to the original files.</li>
+</ul></div>
+</div>
+</div>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/01-tidiness.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
