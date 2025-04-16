@@ -2,15 +2,20 @@
 title: "Examining Data on the NCBI SRA Database"
 teaching: 10
 exercises: 10
-questions:
-- "How do I access public sequencing data?"
-objectives:
-- "Be aware that public genomic data is available."
-- "Understand how to access and download this data."  
-keypoints:
-- "Public data repositories are a great source of genomic data."
-- "You are likely to put your data on a public repository."
 ---
+
+::::::::::::::::::::::::::::::::::::::: questions
+
+- How do I access public sequencing data?
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::: objectives
+
+- Be aware that public genomic data is available.
+- Understand how to access and download this data.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Public data
 
@@ -61,49 +66,60 @@ Follow the next steps to access the data in the SRA using the information in thi
 
 9. Review the SraRunTable in a spreadsheet program. Using your favorite spreadsheet program, open the `SraRunTable.txt` file. If prompted by the spreadsheet software, be aware that the SRA Run Selector provides a **comma-separated** file.
 
-> ## Delimiters
-> The fields in a table are separated (or delimited) usually by commas or tabs, 
-> so they are named with the `.csv` (comma-separated values) and 
-> `.tsv`(tab-separated values) extensions, respectively. But since they are both 
-> plain text files, you can find them with the `.txt` extension, just like in 
-> our `SraRunTable.txt`.
+## Delimiters
+The fields in a table are separated (or delimited) usually by commas or tabs, 
+so they are named with the `.csv` (comma-separated values) and 
+`.tsv`(tab-separated values) extensions, respectively. But since they are both 
+plain text files, you can find them with the `.txt` extension, just like in 
+our `SraRunTable.txt`.
 {: .callout}
 
-> ## Discussion 1  
-> Discuss with the person next to you:
->
-> 1. What was the sequencing platform used for this experiment?
-> 2. What samples in the experiment contain
-> [paired end](http://www.illumina.com/technology/next-generation-sequencing/paired-end-sequencing_assay.html)
-> sequencing data?
-> 3. What other kind of metadata is available?
->
-> > ## Solution
-> > 1. The Illumina sequencing platform was used, shown in the column "Platform". The column "Instrument" 
-> > shows which type of Illumina sequencer was used, in this case, Illumina MiSeq.  
-> > 2. The "LibraryLayout" column shows that all samples contain paired-end data.v  
-> > 3. Technology and instruments are good examples of the types of metadata that can exist for a sequenced biological sample. 
-> > There is technical information, like "Assay Type" and "DATASTORE filetype", information about the sequences 
-> > like "Bases" and biological metadata like "environment_(biome)" and "potassium_ppm".  
-> >
-> {: .solution}
-{: .challenge}
+::::::::::::::::::::::::::::::::::::::: challenge
+## Discussion 1  
+Discuss with the person next to you:
+
+1. What was the sequencing platform used for this experiment?
+2. What samples in the experiment contain
+[paired end](http://www.illumina.com/technology/next-generation-sequencing/paired-end-sequencing_assay.html)
+sequencing data?
+3. What other kind of metadata is available?
+
+
+:::::::::::::::::::: solution
+
+1. The Illumina sequencing platform was used, shown in the column "Platform". The column "Instrument" 
+shows which type of Illumina sequencer was used, in this case, Illumina MiSeq.  
+2. The "LibraryLayout" column shows that all samples contain paired-end data.v  
+3. Technology and instruments are good examples of the types of metadata that can exist for a sequenced biological sample. 
+There is technical information, like "Assay Type" and "DATASTORE filetype", information about the sequences 
+like "Bases" and biological metadata like "environment_(biome)" and "potassium_ppm".  
+
+
+:::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
 
 After answering the questions, you should avoid saving any changes you might have made to this file. We don't want to make any changes. If you were to save this file, make sure you save it as a plain `.txt` file. Remember to keep raw things raw.
 
-> ## Discussion 2: Exploring the European Nucleotide Archive
->
-> Navigate to the [ENA](https://www.ebi.ac.uk/ena) and search the BioProject "PRJEB22811". Explore the ENA Browser and discuss it with your 
-> neighbor the differences between the ENA Browser and the SRA Run Selector.
->
-{: .challenge}
+::::::::::::::::::::::::::::::::::::::: challenge
 
-> ## Downloading reads
-> For downloading the reads, there are mainly two options:
-> * One by one: Go to the **Run Browser** of each sample, navigate to the tab **FASTA/FASTQ download** and click on the **FASTQ** button.
-> * Complete dataset: In the SRA **Run Selector** of the BioProject, go to the **Select** section and click on the **Accession List** button. This will 
-> download a text file `SRR_Acc_List.txt` that you can use to download the reads in bulk with the [SRA Toolkit](http://www.ncbi.nlm.nih.gov/Traces/sra/?view=toolkit_doc), a command-line software package, which is outside the scope of this lesson.
-{: .callout}
+## Discussion 2: Exploring the European Nucleotide Archive
+
+Navigate to the [ENA](https://www.ebi.ac.uk/ena) and search the BioProject "PRJEB22811". Explore the ENA Browser and discuss it with your 
+neighbor the differences between the ENA Browser and the SRA Run Selector.
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::: callout
+
+## Downloading reads
+For downloading the reads, there are mainly two options:
+* One by one: Go to the **Run Browser** of each sample, navigate to the tab **FASTA/FASTQ download** and click on the **FASTQ** button.
+* Complete dataset: In the SRA **Run Selector** of the BioProject, go to the **Select** section and click on the **Accession List** button. This will 
+download a text file `SRR_Acc_List.txt` that you can use to download the reads in bulk with the [SRA Toolkit](http://www.ncbi.nlm.nih.gov/Traces/sra/?view=toolkit_doc), a command-line software package, which is outside the scope of this lesson.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Where to learn more
 
@@ -118,3 +134,10 @@ Jordan G Okie, Amisha T Poret-Peterson, et al. Genomic adaptations in informatio
 [Paper](https://elifesciences.org/articles/49816#info).  
 Data on NCBI SRA: [https://www.ncbi.nlm.nih.gov/Traces/study/?acc=PRJEB22811&o=acc_s%3Aa](https://www.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA556841&o=acc_s%3Aa)  
 Data on EMBL-EBI ENA: [https://www.ebi.ac.uk/ena/browser/view/PRJEB22811](https://www.ebi.ac.uk/ena/data/view/PRJNA556841)
+
+::::::::::::::::::::::::::::::::::::::: keypoints
+
+- Public data repositories are a great source of genomic data.
+- You are likely to put your data on a public repository.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
