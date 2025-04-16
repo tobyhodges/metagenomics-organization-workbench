@@ -1,6 +1,6 @@
 ---
-layout: lesson
-root: .
+permalink: index.html
+site: sandpaper::sandpaper_site
 ---
 
 Good data organization is the foundation of any research project. It not only sets you up nicely for analysis, 
@@ -35,23 +35,29 @@ In this lesson, you will learn the following:
 - How to prepare for, understand, organize, and store the sequencing data that comes back from the sequencing center.
 - How to access and download publicly available data that may need to be used in your bioinformatics analysis.
 
-> ## Getting Started
->
-> This lesson assumes no prior experience with the tools covered in the workshop. 
-> However, learners are expected to have familiarity with some biological concepts,
-> such as that each living organism has a genome and what can be obtained from DNA sequencing.
-> Participants should bring their laptops and plan to participate actively. 
->
-> This lesson is part of a workshop that uses data hosted on an Amazon Machine Instance (AMI). Workshop participants will be given 
-> information on how
-> to log in to the AMI during the workshop. Learners using these materials for the self-directed study will need to set up their own
-> AMI. Information on setting up an AMI and accessing the required data is provided on the [Metagenomics Workshop Setup page](https://carpentries-lab.github.io/metagenomics-workshop/setup.html).
-{: .prereq}
+## Getting Started
 
-> ## For Instructors
-> If you are teaching this lesson in a workshop, please see the
-> [Instructor notes](https://carpentries-lab.github.io/metagenomics-workshop/guide/index.html).
-{: .prereq}
+::::::::::::::::::::::::::::::::::::::::: prereqs
+
+This lesson assumes no prior experience with the tools covered in the workshop. 
+However, learners are expected to have familiarity with some biological concepts,
+such as that each living organism has a genome and what can be obtained from DNA sequencing.
+Participants should bring their laptops and plan to participate actively. 
+
+This lesson is part of a workshop that uses data hosted on an Amazon Machine Instance (AMI). Workshop participants will be given 
+information on how
+to log in to the AMI during the workshop. Learners using these materials for the self-directed study will need to set up their own
+AMI. Information on setting up an AMI and accessing the required data is provided on the [Metagenomics Workshop Setup page](https://carpentries-lab.github.io/metagenomics-workshop/setup.html).
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+## For Instructors
+If you are teaching this lesson in a workshop, please see the
+[Instructor notes](https://carpentries-lab.github.io/metagenomics-workshop/guide/index.html).
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 This lesson is the first one of the [Metagenomics Workshop](https://carpentries-lab.github.io/metagenomics-workshop/), comprised of four lessons. 
 
