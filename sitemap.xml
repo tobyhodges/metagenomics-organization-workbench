@@ -19,7 +19,13 @@
     <loc>https://carpentries-lab.github.io/metagenomics-organization/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-lab.github.io/metagenomics-organization/aio.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-lab.github.io/metagenomics-organization/data.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-lab.github.io/metagenomics-organization/images.html</loc>
   </url>
   <url>
     <loc>https://carpentries-lab.github.io/metagenomics-organization/index.html</loc>
@@ -43,10 +49,22 @@
     <loc>https://carpentries-lab.github.io/metagenomics-organization/instructor/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-lab.github.io/metagenomics-organization/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-lab.github.io/metagenomics-organization/instructor/data.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-lab.github.io/metagenomics-organization/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-lab.github.io/metagenomics-organization/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-lab.github.io/metagenomics-organization/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-lab.github.io/metagenomics-organization/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://carpentries-lab.github.io/metagenomics-organization/instructor/profiles.html</loc>
@@ -56,6 +74,12 @@
   </url>
   <url>
     <loc>https://carpentries-lab.github.io/metagenomics-organization/instructor/setup.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-lab.github.io/metagenomics-organization/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-lab.github.io/metagenomics-organization/key-points.html</loc>
   </url>
   <url>
     <loc>https://carpentries-lab.github.io/metagenomics-organization/profiles.html</loc>
